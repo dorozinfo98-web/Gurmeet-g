@@ -1,0 +1,674 @@
+/* ===========================================
+   DOROZ WEBSITE V2.0
+   Premium Bootstrap Custom CSS
+=========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#333;
+    background:#fff;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    transition:.3s;
+}
+
+section{
+    padding:80px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    transition:.4s;
+}
+
+.navbar-brand{
+    font-size:2rem;
+    font-weight:800;
+    color:#0d6efd !important;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:#222 !important;
+    font-weight:500;
+    margin-left:18px;
+    position:relative;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#0d6efd !important;
+}
+
+.nav-link::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-5px;
+
+width:0;
+
+height:2px;
+
+background:#0d6efd;
+
+transition:.3s;
+
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+
+width:100%;
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+min-height:90vh;
+
+display:flex;
+
+align-items:center;
+
+background:linear-gradient(135deg,#eef6ff,#ffffff);
+
+}
+
+.hero h1{
+
+font-size:3.2rem;
+
+font-weight:800;
+
+color:#222;
+
+}
+
+.hero p{
+
+font-size:1.1rem;
+
+color:#666;
+
+margin:20px 0;
+
+}
+
+.hero .btn{
+
+padding:12px 30px;
+
+border-radius:50px;
+
+font-weight:600;
+
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+font-size:2.4rem;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.section-title p{
+
+color:#777;
+
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+
+border:none;
+
+border-radius:18px;
+
+transition:.4s;
+
+overflow:hidden;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.card img{
+
+height:240px;
+
+object-fit:cover;
+
+}
+
+.card-body h5{
+
+font-weight:700;
+
+}
+
+.card-body p{
+
+color:#666;
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+
+border-radius:50px;
+
+padding:12px 28px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-primary{
+
+background:#0d6efd;
+
+border:none;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 20px rgba(13,110,253,.3);
+
+}
+
+.btn-success:hover{
+
+transform:translateY(-3px);
+
+}/* ===========================================
+   WHY CHOOSE DOROZ
+=========================================== */
+
+.bg-light{
+    background:#f8f9fa!important;
+}
+
+.card i{
+    transition:.4s;
+}
+
+.card:hover i{
+    transform:scale(1.2);
+}
+
+/* ===========================================
+   SERVICES
+=========================================== */
+
+.card-img-top{
+    height:250px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:25px;
+}
+
+.card-body h5{
+    color:#222;
+    margin-bottom:15px;
+}
+
+.card-body p{
+    color:#666;
+    font-size:15px;
+    line-height:1.8;
+}
+
+/* ===========================================
+   COMPANY STATS
+=========================================== */
+
+.bg-primary{
+    background:linear-gradient(135deg,#0d6efd,#0056d6)!important;
+}
+
+.bg-primary h2{
+    font-size:50px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.bg-primary p{
+    font-size:18px;
+    margin:0;
+}
+
+/* ===========================================
+   FEATURED PROJECTS
+=========================================== */
+
+img.rounded{
+    transition:.4s;
+    cursor:pointer;
+    border-radius:18px!important;
+}
+
+img.rounded:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 40px rgba(0,0,0,.20);
+}
+
+/* ===========================================
+   TESTIMONIALS
+=========================================== */
+
+.carousel-item{
+    padding:50px;
+}
+
+.carousel-item h5{
+    color:#ffc107;
+    font-size:28px;
+}
+
+.carousel-item p{
+    color:#555;
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+}
+
+.carousel-item strong{
+    display:block;
+    margin-top:20px;
+}
+
+/* ===========================================
+   FAQ
+=========================================== */
+
+.accordion-item{
+    border:none;
+    margin-bottom:15px;
+    border-radius:15px!important;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.accordion-button{
+    font-weight:600;
+    padding:18px;
+}
+
+.accordion-button:not(.collapsed){
+    background:#0d6efd;
+    color:#fff;
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+}
+
+/* ===========================================
+   CALL TO ACTION
+=========================================== */
+
+.bg-primary .btn-light{
+    font-weight:600;
+    border-radius:50px;
+}
+
+.bg-primary .btn-success{
+    border-radius:50px;
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+footer{
+    background:#111;
+}
+
+footer h3,
+footer h5{
+    color:#fff;
+    margin-bottom:20px;
+}
+
+footer p{
+    color:#ccc;
+}
+
+footer ul{
+    padding:0;
+}
+
+footer ul li{
+    list-style:none;
+    margin-bottom:10px;
+}
+
+footer ul li a{
+    color:#ccc;
+    transition:.3s;
+}
+
+footer ul li a:hover{
+    color:#0d6efd;
+}
+
+footer hr{
+    border-color:#444;
+}/* ===========================================
+   CONTACT PAGE
+=========================================== */
+
+.contact-info{
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.contact-info i{
+    font-size:32px;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.contact-form{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    margin-bottom:20px;
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus{
+
+    outline:none;
+    border-color:#0d6efd;
+    box-shadow:0 0 10px rgba(13,110,253,.2);
+
+}
+
+/* ===========================================
+   FLOATING WHATSAPP
+=========================================== */
+
+.whatsapp-float{
+
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    z-index:999;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.3s;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+    color:#fff;
+
+}
+
+/* ===========================================
+   SCROLL TO TOP
+=========================================== */
+
+#scrollTop{
+
+    position:fixed;
+    right:20px;
+    bottom:95px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#0d6efd;
+    color:#fff;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+
+}
+
+#scrollTop:hover{
+
+    background:#0056d6;
+
+}
+
+/* ===========================================
+   LOADER
+=========================================== */
+
+.loader{
+
+    position:fixed;
+    inset:0;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+
+}
+
+.loader::after{
+
+    content:"";
+    width:60px;
+    height:60px;
+    border:6px solid #ddd;
+    border-top:6px solid #0d6efd;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* ===========================================
+   IMAGE HOVER EFFECT
+=========================================== */
+
+.gallery img{
+
+    transition:.4s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:2.5rem;
+
+}
+
+.navbar-nav{
+
+    text-align:center;
+    margin-top:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:auto;
+    padding:80px 0;
+
+}
+
+.hero h1{
+
+    font-size:2rem;
+
+}
+
+.section-title h2{
+
+    font-size:2rem;
+
+}
+
+.bg-primary h2{
+
+    font-size:36px;
+
+}
+
+footer{
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero .btn{
+
+    width:100%;
+    margin-bottom:15px;
+
+}
+
+.card{
+
+    margin-bottom:20px;
+
+}
+
+.contact-form,
+.contact-info{
+
+    padding:25px;
+
+}
+
+}
+
+/* ===========================================
+   END OF STYLE.CSS
+=========================================== */
